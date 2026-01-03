@@ -29,7 +29,7 @@ export default function Page() {
           <Cup />
 
         </div>
-        <h1 className="font-bold text-[30px] text-center">Teas Categories people</h1>
+        <h1 className="font-bold text-[30px] text-center">Teas Categories</h1>
         <div className="flex space-x-6">
           <Heading3 /><Heading3 /><Heading3 /><Heading3 />
         </div>
