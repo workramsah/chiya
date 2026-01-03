@@ -1,0 +1,28 @@
+import { IoPlayCircleOutline } from "react-icons/io5";
+import { FaStar } from "react-icons/fa6";
+export default function Cup() {
+    return (
+        <div className="h-[612px] w-[365px] flex flex-col items-center ">
+            <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>
+
+            <div>
+                <h1 className="font-bold text-[20px]">Himalayan Goden </h1>
+                <h1 className="font-bold text-[20px]">Orgainc Black Tea</h1>
+            </div>
+            <div className="flex space-x-2 my-3">
+                <h1 className="text-red-500 text-sm ">$795.00</h1>
+                <s className="text-gray-400 text-sm">₹1000</s>
+            </div>
+            <div className="flex items-center space-x-2 text-sm">
+                <div className="flex h-[18px]"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
+                <h1>135 reviews</h1>
+            </div>
+            <div className="flex items-center justify-center space-x-2 rounded-full h-[33px] w-[131px]  border-[1px]">
+                <h1 className="text-[12px] font-black text-gray-400">Quick View</h1>
+                <h1 className="text-[18px]  text-gray-400"><IoPlayCircleOutline /></h1>
+            </div>
+
+            <div className="bg-[rgba(200,221,221,1)] h-[52px] w-[348px]   flex items-center justify-center "><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
+        </div>
+    )
+}
