@@ -2,7 +2,7 @@
 export default function Container(){
     return(
         <>
-        <div className=" h-[650px] flex items-center">
+        <div className=" h-[650px] w-[1280px] flex items-center">
         <div>
             <h1 className="text-[48px] font-bold">Limited Time Blends Tea</h1>
             <h1 className="text-[20px] ">Explore interesting teas,new and old,for a limited time only.These online-only picks can range from small,historic tea blends to interesting single origin lots.</h1>

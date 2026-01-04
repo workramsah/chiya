@@ -1,6 +1,6 @@
 export default function Darjelling() {
   return (
-    <div className="relative h-[802px] w-full">
+    <div className="relative h-[802px] w-[1920px]">
       <img
         src="darjaling.png"
         className="h-full w-full object-cover"

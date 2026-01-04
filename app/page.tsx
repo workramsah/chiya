@@ -1,14 +1,17 @@
+import Ads from "./component/Ads"
 import Backgrounds from "./component/Background"
+import Bigcup from "./component/Bigcup"
 import Blends from "./component/Blends"
 import Container from "./component/Container"
-import Cup from "./component/Cup"
 import Darjelling from "./component/Darjelling"
+import Footer from "./component/Footer"
 import Frame27 from "./component/Frame27"
 import Frame33 from "./component/Frame33"
 import Header from "./component/Header"
 import Heading3 from "./component/Heading3"
 import Imagetxt from "./component/Imagetxt"
 import Nav from "./component/Nav"
+import Ram from "./component/Ram"
 import Shipping from "./component/Shipping"
 import Sip from "./component/Sip"
 
@@ -16,20 +19,13 @@ import Sip from "./component/Sip"
 export default function Page() {
   return (
     <>
-      <div className="" >
-
+      <div className="flex flex-col items-center" >
+        <Ads/>
         <Nav></Nav>
-        <img src="main.png"></img>
+        <img src="main.png" className="w-[1920px] h-[594px]"></img>
         <Backgrounds />
         <Header />
-        <div className="flex space-x-[24px]">
-          <Cup />
-          <Cup />
-          <Cup />
-          <Cup />
-          
-
-        </div>
+        <Bigcup/>
         <h1 className="font-bold text-[30px] text-center">Teas Categories</h1>
         <div className="flex space-x-6">
           <Heading3 /><Heading3 /><Heading3 /><Heading3 /><Heading3 />
@@ -45,6 +41,8 @@ export default function Page() {
       <Sip/>
       <Imagetxt />
       <Shipping />
+      <Ram/>
+      <Footer/>
 
 
 

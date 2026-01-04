@@ -2,6 +2,7 @@ import { IoPlayCircleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 export default function Cup() {
     return (
+        <div>
         <div className="h-[612px] w-[365px] flex flex-col items-center ">
             <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>
 
@@ -23,6 +24,7 @@ export default function Cup() {
             </div>
 
             <div className="bg-[rgba(200,221,221,1)] h-[52px] w-[348px]   flex items-center justify-center "><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
+        </div>
         </div>
     )
 }

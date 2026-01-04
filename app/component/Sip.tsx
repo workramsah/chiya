@@ -2,7 +2,7 @@
 export default function Sip(){
     return(
         <>
-        <div className="flex space-x-6">
+        <div className="flex items-center space-x-6 w-[1280px] h-[650px]">
             <img src="book.png" className="w-[675px] h-[466px]"></img>
             <div className="flex flex-col items-start justify-evenly">
                 <h1 className="font-bold text-[48px]">A Sip through <p className="text-[48px] text-[#BA4B16]">Time and Soul</p></h1>

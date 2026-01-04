@@ -1,4 +1,6 @@
-import Home from "../component/Home";
+
+import Bigcup from "../component/Bigcup";
+
 
 
 
@@ -6,7 +8,8 @@ export default function Page(){
     return(
         <>
         <div>
-            <Home></Home>
+       <Bigcup/>
+       
           
         </div>
         </>

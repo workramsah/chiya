@@ -5,7 +5,7 @@ import { BsHandbag } from "react-icons/bs";
 export default function Nav(){
     return(
         <>
-        <div className="bg-white  flex justify-between m-5 items-center">
+        <div className="bg-[#DDDDDD] w-[1920px] h-[117.69px] flex justify-between  items-center">
             <div className="flex space-x-5">
             <h1 className="text-[20px]">About us</h1>
             <h1 className="text-[20px]">Tea Product</h1>
