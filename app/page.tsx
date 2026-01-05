@@ -4,6 +4,7 @@ import Bigcup from "./component/Bigcup"
 import Blends from "./component/Blends"
 import Container from "./component/Container"
 import Darjelling from "./component/Darjelling"
+import Faq from "./component/Faq"
 import Footer from "./component/Footer"
 import Frame27 from "./component/Frame27"
 import Frame33 from "./component/Frame33"
@@ -42,6 +43,7 @@ export default function Page() {
       <Imagetxt />
       <Shipping />
       <Ram/>
+      <Faq/>
       <Footer/>
 
 

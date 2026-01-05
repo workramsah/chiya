@@ -1,4 +1,4 @@
-import Faq from "../component/Faq";
+import Backgroundimg from "../component/book/Backgrountimg";
 
 
 
@@ -7,7 +7,7 @@ export default function Page(){
     return(
         <>
         <div>
-        <Faq/>
+        <Backgroundimg/>
         </div>
         </>
     )

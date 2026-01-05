@@ -1,21 +1,26 @@
 import { IoIosSearch } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { BsHandbag } from "react-icons/bs";
+import Products from "./Products";
+import Link from "next/link";
+
 
 export default function Nav(){
     return(
         <>
         <div className="bg-[#DDDDDD] w-full h-[117.69px] flex justify-between  items-center">
             <div className="flex space-x-5 mx-3">
-            <h1 className="text-[20px]">About us</h1>
-            <h1 className="text-[20px]">Tea Product</h1>
+            <Link href="/aboutus"><h1 className="text-[20px]">About us</h1></Link>
+            
+            <h1 className="text-8"><Products/></h1>
             </div>
 
 
             <div className="flex space-x-5 items-center mx-3">
-            <h1 className="text-[20px]">Blog</h1>
-            <h1 className="text-[20px]">Contact</h1>
-            <h1 className="font-bold bg-amber-400 text-[16px] p-[12px] rounded-full">franchise Opportunity</h1>
+            <Link href="/learn"><h1 className="text-[20px]">Blog</h1></Link>
+            <Link href="/"><h1 className="text-[20px]">Contact</h1></Link>
+            <Link href="/book"><h1 className="font-bold bg-amber-400 text-[16px] p-[12px] rounded-full">franchise Opportunity</h1></Link>
+            
            <IoIosSearch className="h-[21px] w-[21px]"/>
            <CgProfile className="h-[21px] w-[21px]"/>
            <BsHandbag className="h-[21px] w-[21px]"/>

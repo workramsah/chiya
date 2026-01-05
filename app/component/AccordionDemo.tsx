@@ -14,7 +14,7 @@ export function AccordionDemo() {
       defaultValue="item-1"
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger>Product Information</AccordionTrigger>
+        <AccordionTrigger className="text-[28px]">What matters to us most</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
             Our flagship product combines cutting-edge technology with sleek
@@ -28,7 +28,7 @@ export function AccordionDemo() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Shipping Details</AccordionTrigger>
+        <AccordionTrigger className="text-[28px]">Canadian-made quality</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
             We offer worldwide shipping through trusted courier partners.
@@ -42,7 +42,52 @@ export function AccordionDemo() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Return Policy</AccordionTrigger>
+        <AccordionTrigger className="text-[28px]">130 years of tea blending</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+            We stand behind our products with a comprehensive 30-day return
+            policy. If you&apos;re not completely satisfied, simply return the
+            item in its original condition.
+          </p>
+          <p>
+            Our hassle-free return process includes free return shipping and
+            full refunds processed within 48 hours of receiving the returned
+            item.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
+        <AccordionTrigger className="text-[28px]">Rigorous quality testing</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+            We stand behind our products with a comprehensive 30-day return
+            policy. If you&apos;re not completely satisfied, simply return the
+            item in its original condition.
+          </p>
+          <p>
+            Our hassle-free return process includes free return shipping and
+            full refunds processed within 48 hours of receiving the returned
+            item.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-5">
+        <AccordionTrigger className="text-[28px]">Shipping & order fullfillment</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+            We stand behind our products with a comprehensive 30-day return
+            policy. If you&apos;re not completely satisfied, simply return the
+            item in its original condition.
+          </p>
+          <p>
+            Our hassle-free return process includes free return shipping and
+            full refunds processed within 48 hours of receiving the returned
+            item.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger className="text-[28px]">Online and in-store experience</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
             We stand behind our products with a comprehensive 30-day return
