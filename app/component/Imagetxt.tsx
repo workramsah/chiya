@@ -1,6 +1,6 @@
 export default function Imagetxt() {
   return (
-    <div className="w-[1920] h-[728px] flex">
+    <div className="w-full h-[728px] flex">
       
       <div className="flex flex-col items-center justify-center w-1/2 p-4">
         <h1 className="text-2xl font-bold mb-4">Our Story</h1>

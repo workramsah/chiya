@@ -1,7 +1,7 @@
 import { IoPlayCircleSharp } from "react-icons/io5";
 export default function Darjelling() {
   return (
-    <div className="relative h-[802px] w-[1920px]">
+    <div className="relative h-[802px] w-full">
       <img
         src="darjaling.png"
         className="h-full w-full object-cover"
