@@ -1,14 +1,12 @@
-import Backgroundimg from "../component/book/Backgrountimg";
-
-
+import Certifications from "../component/about/Certifications";
 
 
 export default function Page(){
-    return(
-        <>
-        <div>
-        <Backgroundimg/>
-        </div>
-        </>
-    )
+  return(
+    <>
+    <div>
+    <Certifications/>
+    </div>
+    </>
+  )
 }

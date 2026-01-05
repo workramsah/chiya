@@ -1,3 +1,4 @@
+import { IoPlayCircleSharp } from "react-icons/io5";
 export default function Darjelling() {
   return (
     <div className="relative h-[802px] w-[1920px]">
@@ -7,9 +8,13 @@ export default function Darjelling() {
         alt="Darjeeling"
       />
 
-      <h1 className="absolute inset-0 flex items-center justify-center text-center font-bold text-[61px] text-white">
-        Premium tea sourced from Himalayas of Nepal & Darjeeling
-      </h1>
+      <div className="absolute inset-0 left-1/2 top-50 flex flex-col items-center justify-center text-center font-bold text-[56.31px] text-[#FAFAFA] w-[623px] h-[341px] ">
+        <h1 >
+          Premium tea sourced from Himalayas of Nepal & Darjeeling
+        </h1>
+        <div><IoPlayCircleSharp /></div>
+
+      </div>
     </div>
   );
 }

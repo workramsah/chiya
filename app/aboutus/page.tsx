@@ -6,12 +6,13 @@ import Franchise from "../component/about/Franchise";
 import Heading from "../component/about/Heading";
 import Meet from "../component/about/Meet";
 import Purpose from "../component/about/Purpose";
-import What from "../component/about/What";
 import Where from "../component/about/Where";
 import Footer from "../component/Footer";
-import Frame27 from "../component/Frame27";
 import Nav from "../component/Nav";
 import Sip from "../component/Sip";
+import Backgroundimg from "../component/book/Backgrountimg";
+import Opportunity from "../component/about/Opportunity";
+
 
 export default function Page(){
     return(
@@ -19,7 +20,8 @@ export default function Page(){
         <div className="flex flex-col items-center">
             <Heading/>
             <Nav></Nav>
-            <img src="about/main.png" className="w-full h-[857px]"></img>
+            <Backgroundimg/>
+            
             <Purpose/>
             <Chiya/>
             <Where/>
@@ -28,7 +30,7 @@ export default function Page(){
             <Ethical/>
             <Meet/>
             <Certifications/>
-            <Frame27/>
+            <Opportunity/>
             <Franchise/>
             <Footer/>
         </div>

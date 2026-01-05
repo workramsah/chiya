@@ -15,6 +15,7 @@ import Nav from "./component/Nav"
 import Ram from "./component/Ram"
 import Shipping from "./component/Shipping"
 import Sip from "./component/Sip"
+import Tea from "./component/Tea"
 
 
 export default function Page() {
@@ -23,7 +24,8 @@ export default function Page() {
       <div className="flex flex-col items-center" >
         <Ads/>
         <Nav></Nav>
-        <img src="main.png" className="w-[1920px] h-[594px]"></img>
+        
+        <Tea/>
         <Backgrounds />
         <Header />
         <Bigcup/>

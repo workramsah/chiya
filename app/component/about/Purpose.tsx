@@ -2,7 +2,7 @@
 export default function Purpose() {
     return (
         <>
-            <div className="w-[1280px] h-[1170px]">
+            <div className="w-[1280px] h-[1170px] p-3">
                 <div className="flex items-center justify-between space-x-[71px]">
                     <img src="about/plant.png" className="w-[565px] h-[565px]"></img>
                     <div>
