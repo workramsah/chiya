@@ -1,5 +1,4 @@
-
-import Bigcup from "../component/Bigcup";
+import Faq from "../component/Faq";
 
 
 
@@ -8,9 +7,7 @@ export default function Page(){
     return(
         <>
         <div>
-       <Bigcup/>
-       
-          
+        <Faq/>
         </div>
         </>
     )

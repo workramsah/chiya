@@ -1,0 +1,15 @@
+import Fish from "./Fish";
+
+export default function Franchise(){
+    return(
+        <>
+        <div className="flex flex-col items-center justify-between space-y-[29px]">
+            <h1 className="font-bold text-[64px]">Our franchise Locations</h1>
+            
+            <div className="flex space-x-[29px]">
+                <Fish/><Fish/><Fish/><Fish/><Fish/>
+            </div>
+        </div>
+        </>
+    )
+}
