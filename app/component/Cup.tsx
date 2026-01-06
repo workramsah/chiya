@@ -13,7 +13,7 @@ export default function Cup(props:Props) {
             <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>
 
             <div>
-                <h1 className="font-bold text-[20px]">{props.name}</h1>
+                <h1 className="font-bold text-[20px] hover:text-green-300">{props.name}</h1>
                 <h1 className="font-bold text-[20px]">Orgainc Black Tea</h1>
             </div>
             <div className="flex space-x-2 my-3">
@@ -21,7 +21,7 @@ export default function Cup(props:Props) {
                 <s className="text-gray-400 text-sm">$1000</s>
             </div>
             <div className="flex items-center space-x-2 text-sm">
-                <div className="flex h-[18px]"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
+                <div className="flex h-[18px] text-yellow-500"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
                 <h1>135 reviews</h1>
             </div>
             <div className="flex items-center justify-center space-x-2 rounded-full h-[33px] w-[131px]  border-[1px]">

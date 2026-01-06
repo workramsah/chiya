@@ -8,7 +8,7 @@ interface Props{
 export default function Home(props:Props){
     return(
         <>
-        <div className="w-[559px] h-[373px] space-y-6">
+        <div className="w-[559px] h-[373px] space-y-6 hover:scale-105 transition">
             
             <div className="flex">
 
