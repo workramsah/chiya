@@ -22,31 +22,35 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col items-center" >
-        <Ads/>
+        <Ads />
         <Nav></Nav>
-        
-        <Tea/>
+
+        <Tea />
         <Backgrounds />
         <Header />
-        <Bigcup/>
+        <Bigcup />
         <h1 className="font-bold text-[30px] text-center">Teas Categories</h1>
         <div className="flex space-x-6">
-          <Heading3 /><Heading3 /><Heading3 /><Heading3 /><Heading3 />
+          <Heading3 name="Black"/>
+          <Heading3 name="Green"/>
+          <Heading3 name="Goldern"/>
+          <Heading3 name="Red"/>
+          <Heading3 name="Silver"/>
         </div>
         <div className="">
 
-        <Container/>
+          <Container />
         </div>
-        <Blends/>
-      <Darjelling />
-      <Frame27 />
-      <Frame33 />
-      <Sip/>
-      <Imagetxt />
-      <Shipping />
-      <Ram/>
-      <Faq/>
-      <Footer/>
+        <Blends />
+        <Darjelling />
+        <Frame27 />
+        <Frame33 />
+        <Sip />
+        <Imagetxt />
+        <Shipping />
+        <Ram />
+        <Faq />
+        <Footer />
 
 
 

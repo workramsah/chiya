@@ -1,18 +1,24 @@
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
-export default function Cup() {
+
+interface Props{
+    name:string,
+    price:number
+}
+
+export default function Cup(props:Props) {
     return (
         <div>
         <div className="h-[612px] w-[365px] flex flex-col items-center ">
             <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>
 
             <div>
-                <h1 className="font-bold text-[20px]">Himalayan Goden </h1>
+                <h1 className="font-bold text-[20px]">{props.name}</h1>
                 <h1 className="font-bold text-[20px]">Orgainc Black Tea</h1>
             </div>
             <div className="flex space-x-2 my-3">
-                <h1 className="text-red-500 text-sm ">$795.00</h1>
-                <s className="text-gray-400 text-sm">₹1000</s>
+                <h1 className="text-red-500 text-sm ">${props.price}</h1>
+                <s className="text-gray-400 text-sm">$1000</s>
             </div>
             <div className="flex items-center space-x-2 text-sm">
                 <div className="flex h-[18px]"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>

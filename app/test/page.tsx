@@ -1,11 +1,13 @@
-import Certifications from "../component/about/Certifications";
+
+import Darjelling from "../component/Darjelling";
+
 
 
 export default function Page(){
   return(
     <>
     <div>
-    <Certifications/>
+     <Darjelling/>
     </div>
     </>
   )

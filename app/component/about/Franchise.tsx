@@ -8,7 +8,11 @@ export default function Franchise() {
 
 
                 <div className="flex space-x-[29px]">
-                    <Fish /><Fish /><Fish /><Fish /><Fish />
+                    <Fish name="Nepal" description="Kathmandu Boudha-6"/>
+                    <Fish  name="Nepal" description="Kathmandu Boudha-6"/>
+                    <Fish name="Nepal" description="Kathmandu Boudha-6"/>
+                    <Fish name="Nepal" description="Kathmandu Boudha-6"/>
+                    <Fish name="Nepal" description="kathmandu Boudha-6"/>
                 </div>
             </div>
         </>

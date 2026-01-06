@@ -12,6 +12,8 @@ import Nav from "../component/Nav";
 import Sip from "../component/Sip";
 import Backgroundimg from "../component/book/Backgrountimg";
 import Opportunity from "../component/about/Opportunity";
+import About from "../component/about/About";
+import Join from "../component/about/Join";
 
 
 export default function Page(){
@@ -26,11 +28,14 @@ export default function Page(){
             <Chiya/>
             <Where/>
             <Farmer/>
+            <About/>
             <Sip/>
             <Ethical/>
             <Meet/>
             <Certifications/>
             <Opportunity/>
+            
+            <Join/>
             <Franchise/>
             <Footer/>
         </div>
