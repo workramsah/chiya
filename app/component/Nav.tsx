@@ -19,7 +19,7 @@ export default function Nav(){
             <div className="flex space-x-5 items-center mx-3">
             <Link href="/learn"><h1 className="text-[20px] hover:text-yellow-500">Blog</h1></Link>
             <Link href="/"><h1 className="text-[20px] hover:text-yellow-500 ">Contact</h1></Link>
-            <Link href="/book"><h1 className="font-bold bg-amber-400 text-[16px] p-[12px] rounded-full hover:text-red-500 transition">franchise Opportunity</h1></Link>
+            <Link href="/book"><h1 className="font-bold bg-amber-400 text-[16px] p-[12px] rounded-full hover:scale-105 transition">franchise Opportunity</h1></Link>
             
            <IoIosSearch className="h-[21px] w-[21px]"/>
            <CgProfile className="h-[21px] w-[21px]"/>

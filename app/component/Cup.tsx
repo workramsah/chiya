@@ -29,7 +29,7 @@ export default function Cup(props:Props) {
                 <h1 className="text-[18px]  text-gray-400"><IoPlayCircleOutline /></h1>
             </div>
 
-            <div className="bg-[rgba(200,221,221,1)] h-[52px] w-[348px]   flex items-center justify-center "><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
+            <div className="bg-green-200 h-[52px] w-[348px]   flex items-center justify-center hover:bg-green-400"><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
         </div>
         </div>
     )

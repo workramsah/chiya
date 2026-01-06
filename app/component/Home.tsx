@@ -12,7 +12,7 @@ export default function Home(props:Props){
             
             <div className="flex">
 
-            <img  className="w-[268px] h-[373px]" src="women.png"></img>
+            <img  className="w-[268px] h-[373px] object-cover" src="women.png"></img>
             <div className="w-[291px] h-[373px] bg-[rgba(51,154,137,1)] flex flex-col justify-center items-center text-white  p-4 text-center">
             <h1 className="text-[30px] font-bold mb-2">{props.title}</h1>
             <h1 className="text-[30px] font-medium">{props.second}</h1>
