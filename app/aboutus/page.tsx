@@ -19,7 +19,7 @@ import Join from "../component/about/Join";
 export default function Page(){
     return(
         <>
-        <div className="flex flex-col items-center w-[1440px] mx-auto">
+        <div className="flex flex-col items-center w-full mx-auto">
             <Heading/>
             <Nav></Nav>
             <Backgroundimg/>

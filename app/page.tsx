@@ -21,7 +21,7 @@ import Tea from "./component/Tea"
 export default function Page() {
   return (
     <>
-      <div className="flex flex-col items-center w-[1440px] mx-auto" >
+      <div className="flex flex-col items-center w-full mx-auto" >
         <Ads />
         <Nav></Nav>
 
