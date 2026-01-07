@@ -1,8 +1,9 @@
 import { IoIosSearch } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
 import { BsHandbag } from "react-icons/bs";
 import Products from "./Products";
 import Link from "next/link";
+import { Dropdown } from "./Dropdown";
+import { Drawer } from "./Drawer";
 
 
 export default function  Nav(){
@@ -22,8 +23,8 @@ export default function  Nav(){
             <Link href="/book"><h1 className="font-bold bg-amber-400 text-[16px] p-[12px] rounded-full hover:scale-105 transition">franchise Opportunity</h1></Link>
             
             
-           <IoIosSearch className="h-[21px] w-[21px] "/>
-           <CgProfile className="h-[21px] w-[21px]"/>
+           <div ><Drawer/></div>
+           <div><Dropdown/></div>
            <BsHandbag className="h-[21px] w-[21px]"/>
             
             
