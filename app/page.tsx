@@ -29,13 +29,13 @@ export default function Page() {
         <Backgrounds />
         <Header />
         <Bigcup />
-        <h1 className="font-bold text-[30px] text-center">Teas Categories</h1>
+        <h1 className="font-bold text-[30px] text-center ">Teas Categories</h1>
         <div className="flex space-x-6">
-          <Heading3 name="Black"/>
-          <Heading3 name="Green"/>
-          <Heading3 name="Goldern"/>
-          <Heading3 name="Red"/>
-          <Heading3 name="Silver"/>
+          <Heading3 bg="bg-[linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Black"/>
+          <Heading3 bg="bg-[linear-gradient(rgba(37,125,39,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Green"/>
+          <Heading3 bg="bg-[linear-gradient(rgba(19,134,129,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Goldern"/>
+          <Heading3 bg="bg-[linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Red"/>
+          <Heading3 bg="bg-[linear-gradient(rgba(145,59,89,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Silver"/>
         </div>
         <div className="">
 

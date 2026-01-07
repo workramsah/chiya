@@ -53,11 +53,11 @@ export default function Footer(){
                     <input placeholder="What's your email?" className="bg-white p-2"></input>
                     <button className="bg-black text-white p-2 font-bold">Sign Up</button>
                 </div>
-                <div className="flex my-4 space-x-16">
-                   <div className="bg-white"><FaFacebookF /></div>
-                   <div className="bg-white"><FaInstagram /></div>
-                   <div className="bg-white"><AiOutlineYoutube /></div>
-                   <div className="bg-white"><FaTiktok /></div>
+                <div className="flex my-4 space-x-16 items-center">
+                   <div className="text-white text-[18px]"><FaFacebookF /></div>
+                   <div className="text-white text-[21px]"><FaInstagram /></div>
+                   <div className="text-white text-[25px]"><AiOutlineYoutube /></div>
+                   <div className="text-white text-[18px]"><FaTiktok /></div>
                     
                     
                 </div>

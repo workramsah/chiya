@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function Tea() {
@@ -19,10 +20,12 @@ export default function Tea() {
               sip with purpose
             </h1>
 
+              <Link target="_blank" rel="noopener noreferrer" href={"https://ekcupchiya.tripverticals.com/shop/?max_price=1407"}>
             <div className="flex items-center bg-[#FFC150] w-[190px] h-[52px] justify-center space-x-4 rounded-full font-bold text-[16px] text-black cursor-pointer hover:scale-105 transition">
               <span>sip the best</span>
               <MdOutlineArrowOutward className="text-xl" />
             </div>
+              </Link>
           </div>
         </div>
       </div>

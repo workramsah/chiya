@@ -14,7 +14,7 @@ export default function Cup(props:Props) {
 
             <div>
                 <h1 className="font-bold text-[20px] hover:text-green-300">{props.name}</h1>
-                <h1 className="font-bold text-[20px]">Orgainc Black Tea</h1>
+                <h1 className="font-bold text-[20px] hover:text-green-300">Orgainc Black Tea</h1>
             </div>
             <div className="flex space-x-2 my-3">
                 <h1 className="text-red-500 text-sm ">${props.price}</h1>

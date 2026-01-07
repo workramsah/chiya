@@ -3,11 +3,12 @@ import { IoPlayCircleOutline } from "react-icons/io5";
 
 interface Props{
   name:string,
+  bg:string
 }
 export default function Heading3(props:Props) {
   return (
     <>
-      <div className="bg-[linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition hover:shadow-2xl">
+      <div className={`${props.bg}`}>
        <h1 className="text-white text-2xl font-bold ">{props.name}</h1>
        <img src="leaf.png"></img>
 
