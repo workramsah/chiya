@@ -1,4 +1,4 @@
-import { IoIosSearch } from "react-icons/io";
+
 import { BsHandbag } from "react-icons/bs";
 import Products from "./Products";
 import Link from "next/link";
@@ -25,7 +25,8 @@ export default function  Nav(){
             
            <div ><Drawer/></div>
            <div><Dropdown/></div>
-           <BsHandbag className="h-[21px] w-[21px]"/>
+           <Link href={"https://ekcupchiya.tripverticals.com/assam-india/"}><BsHandbag className="h-[21px] w-[21px]"/></Link>
+           
             
             
             

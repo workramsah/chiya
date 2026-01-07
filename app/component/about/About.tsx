@@ -2,12 +2,12 @@ export default function About() {
   return (
     <>
       
-      <div className="relative w-[1920px] h-[981px]">
+      <div className="relative w-[1440px] h-[981px] mx-auto mt-2">
         
        
         <img
           src="about/mount.jpg"
-          className="w-full h-full object-cover"
+          className="w-full mx-auto h-full object-cover"
           alt="Mountains"
         />
 
@@ -18,9 +18,9 @@ export default function About() {
         </div>
 
         
-        <div className="absolute top-[346px] left-[360px] w-[373px] h-[528px] text-white">
+        <div className="absolute top-[346px] left-[60px] w-[373px] h-[528px] text-white">
           <h1>
-            <span className="font-bold text-[50px]">Our</span>{" "}
+            <span className="font-bold text-[50px]">Our</span>
             <span className="text-[50px]">Story</span>
           </h1>
 
@@ -43,7 +43,7 @@ export default function About() {
         </div>
 
         
-        <div className="absolute top-[346px] right-[637px] w-[373px] h-[316px] text-white">
+        <div className="absolute top-[346px] right-[37px] w-[373px] h-[316px] text-white">
           <h1 className="flex text-[50.6px] space-x-4">
             <span className="font-bold">Our</span>
             <span>philosophy</span>

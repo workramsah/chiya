@@ -86,7 +86,7 @@ export function AccordionDemo() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
+      <AccordionItem value="item-6">
         <AccordionTrigger className="text-[28px]">Online and in-store experience</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>

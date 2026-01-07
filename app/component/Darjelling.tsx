@@ -4,7 +4,7 @@ export default function Darjelling() {
     <div className="relative h-[802px] w-full">
       <img
         src="darjaling.png"
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover brightness-50"
         alt="Darjeeling"
       />
 
