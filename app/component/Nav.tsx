@@ -1,9 +1,9 @@
 
 import { BsHandbag } from "react-icons/bs";
-import Products from "./Products";
 import Link from "next/link";
 import { Dropdown } from "./Dropdown";
 import { Drawer } from "./Drawer";
+import List from "./List";
 
 
 export default function  Nav(){
@@ -13,7 +13,7 @@ export default function  Nav(){
             <div className="flex space-x-5 mx-3">
             <Link href="/aboutus"><h1 className="text-[20px] font-bold hover:text-yellow-500  sm:visible">About us</h1></Link>
             
-            <h1 className="text-8 hover:text-yellow-500 "><Products/></h1>
+            <h1 className="text-[20px] font-bold hover:text-yellow-500  sm:visible"><List/></h1>
             </div>
 
 
