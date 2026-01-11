@@ -1,6 +1,7 @@
 import Addproducts from "./component/addproductc";
 import Anav from "./component/Anav";
-import Side from "./component/Side";
+import Finalsidebar from "./component/Finalsidebar";
+
 
 export default function Page() {
     return (
@@ -11,7 +12,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex space-x-4">
-                    <Side />
+                    <Finalsidebar/>
                     <Addproducts />
                 </div>
 

@@ -6,10 +6,10 @@ interface Props{
 export default function Order(props:Props) {
     return (
         <>
-            <div>
+            
                 
                 <div className="flex   justify-evenly space-y-4 space-x-6 md:space-y-0 w-full border-b">
-                    <div className="flex space-x-4 items-center">
+                    <div className="md:flex space-x-4 items-center flex-col">
 
                         <img src="/cup.png" className="w-20"></img>
 
@@ -32,7 +32,7 @@ export default function Order(props:Props) {
                         <h1>Payment:Pending</h1>
                     </div>
                 </div>
-            </div>
+            
         </>
     )
 }

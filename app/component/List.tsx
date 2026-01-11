@@ -3,7 +3,7 @@ export default function List(){
     return(
         <>
         <div>
-            <select>
+            <select >
                 <option >Product</option>
                 <option>Tea Goldern</option>
                 <option>Tea Silver</option>

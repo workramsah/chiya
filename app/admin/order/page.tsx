@@ -1,4 +1,5 @@
 import Anav from "../component/Anav";
+import Finalsidebar from "../component/Finalsidebar";
 import Order from "../component/Order";
 import Side from "../component/Side";
 
@@ -12,7 +13,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex space-x-4">
-                    <Side />
+                    <Finalsidebar/>
                     <div>
                     <div className="text-[28px] font-medium py-4 border-b w-full">Orders</div>
                     <Order name="Ram narayan sah"/>

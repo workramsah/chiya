@@ -1,5 +1,6 @@
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
+import Link from "next/link";
 
 interface Props{
     name:string,
@@ -28,8 +29,10 @@ export default function Cup(props:Props) {
                 <h1 className="text-[12px] font-black text-gray-400">Quick View</h1>
                 <h1 className="text-[18px]  text-gray-400"><IoPlayCircleOutline /></h1>
             </div>
-
+            
+            <Link href="/admin/cart">
             <div className="bg-green-200 h-[52px] w-[348px]   flex items-center justify-center hover:bg-green-400"><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
+            </Link>
         </div>
         </div>
     )

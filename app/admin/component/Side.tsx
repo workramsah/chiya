@@ -1,6 +1,5 @@
 import { MdAddShoppingCart } from "react-icons/md";
 import { FaFileCircleCheck } from "react-icons/fa6";
-import { TiTick } from "react-icons/ti";
 import Link from "next/link";
 export default function Side() {
     return (
