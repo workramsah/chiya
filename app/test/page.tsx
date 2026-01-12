@@ -1,7 +1,10 @@
+import Testnav from "../component/Testnav";
+
 export default function Page(){
   return(
     <>
-    <div>hello world from test page
+    <div>
+      <Testnav/>
     
     </div>
     </>

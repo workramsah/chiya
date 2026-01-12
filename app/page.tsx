@@ -11,11 +11,11 @@ import Frame33 from "./component/Frame33"
 import Header from "./component/Header"
 import Heading3 from "./component/Heading3"
 import Imagetxt from "./component/Imagetxt"
-import Nav from "./component/Nav"
 import Ram from "./component/Ram"
 import Shipping from "./component/Shipping"
 import Sip from "./component/Sip"
 import Tea from "./component/Tea"
+import Testnav from "./component/Testnav"
 
 
 export default function Page() {
@@ -23,7 +23,10 @@ export default function Page() {
     <>
       <div className="flex flex-col items-center w-full mx-auto" >
         <Ads />
-        <Nav></Nav>
+        <div className="w-full">
+
+        <Testnav></Testnav>
+        </div>
 
         <Tea />
         <Backgrounds />
