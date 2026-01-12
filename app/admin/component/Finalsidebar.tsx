@@ -11,19 +11,19 @@ export default function Finalsidebar() {
     return (
         <>
             <div className="flex">
-                <div className={`bg-blue-800 h-screen pt-7 p-5  duration-300 ${open ? "w-72" : "w-20"} relative flex-col  `}>
+                <div className={`bg-blue-800 h-screen pt-7 p-5 space-y-6 duration-300 ${open ? "w-72" : "w-20"} relative flex flex-col `}>
                     <BsArrowLeftShort className={`text-3xl bg-white text-black absolute -right-3 top rounded-full border-2 cursor-pointer ${!open && "rotate-180"}  `} onClick={() => setOpen(!open)} />
                     <Link href="/admin/addproduct">
-                        <div className="inline-flex space-x-4">
-                            <MdAddShoppingCart className="bg-white text-3xl" />
-                            <h1 className={`${open ? "text-2xl" : "hidden"} duration-300 text-white `}>Add Product</h1>
+                        <div className={`${open ? "hover:bg-blue-900 p-2 rounded-2xl" : ""} inline-flex space-x-4`}>
+                            <MdAddShoppingCart className="bg-white text-3xl rounded:sm" />
+                            <h1 className={`${open ? "text-2xl " : "hidden"} duration-300 text-white `}>Add Product</h1>
                         </div>
                     </Link>
 
                     <Link href="/admin/order">
-                        <div className="inline-flex space-x-4 ">
+                        <div className={`${open ? "hover:bg-blue-900 p-2 rounded-2xl" : ""} inline-flex space-x-4`}>
 
-                            <FaFileCircleCheck className="bg-white text-3xl" />
+                            <FaFileCircleCheck className="bg-white  text-3xl  rounded-sm" />
                             <h1 className={`${open ? "text-2xl" : "hidden"} duration-300 text-white `}>Orders</h1>
                         </div>
                     </Link>

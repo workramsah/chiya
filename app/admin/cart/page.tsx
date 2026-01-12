@@ -1,6 +1,7 @@
 
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import Box from "../component/Box";
+import Link from "next/link";
 export default function Page() {
     return (
         <>
@@ -72,13 +73,13 @@ export default function Page() {
                                 <tr>
                                     <td className="text-left flex items-center space-x-4"><img src="/cup.png" width={70} alt="cup" /><span className="font-medium">Product Name</span></td>
                                     <td>$200</td>
-                                    <td><input type="number" min="1"  className="w-16 border text-center rounded appearance-none" /></td>
+                                    <td><input type="number" min="1" defaultValue={1} className="w-16 border text-center rounded appearance-none" /></td>
                                     <td>$200.00</td>
                                 </tr>
                                 <tr>
                                     <td className="text-left flex items-center space-x-4"><img src="/cup.png" width={70} alt="cup" /><span className="font-medium">Product Name</span></td>
                                     <td>$300</td>
-                                    <td><input type="number" min="1"  className="w-16 border text-center rounded appearance-none" /></td>
+                                    <td><input type="number" min="1" defaultValue={1} className="w-16 border text-center rounded appearance-none" /></td>
                                     <td>$600</td>
                                 </tr>
                             </tbody>
@@ -87,7 +88,10 @@ export default function Page() {
 
                     <div className="flex items-center mt-4 space-x-4 text-amber-300">
                         <FaLongArrowAltLeft />
+                        <Link href="/">
+                        
                         <h1 className="font-medium">Continue Shopping</h1>
+                        </Link>
                     </div>
 
 
