@@ -11,7 +11,7 @@ export default function Footer(){
 
     return(
         <>
-        <div className="bg-sky-950 flex justify-around w-full h-[535px]] pt-2">
+        <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 bg-sky-950 flex justify-around w-full h-[535px]] space-y-6 pt-2 pl-2">
             <div>
             <h1 className={`${inter.className} text-white font-bold text-[16px]`}>Products</h1>
                 <h1 className="text-white text-[16px]">Black Tea</h1>

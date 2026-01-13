@@ -33,7 +33,7 @@ export default function Page() {
         <Header />
         <Bigcup />
         <h1 className="font-bold text-[30px] text-center ">Teas Categories</h1>
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 ">
           <Heading3 bg="bg-[linear-gradient(rgba(0,0,0,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Black"/>
           <Heading3 bg="bg-[linear-gradient(rgba(37,125,39,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Green"/>
           <Heading3 bg="bg-[linear-gradient(rgba(19,134,129,1),rgba(255,255,255,1))] w-[279.23px] h-[421.68px] rounded-4xl flex flex-col  items-center justify-evenly hover:scale-105 transition" name="Goldern"/>
