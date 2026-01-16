@@ -11,8 +11,9 @@ export default function Cup(props:Props) {
     return (
         <div>
         <div className="h-[612px] w-[365px] flex flex-col items-center ">
+            <Link href="/detail">
             <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>
-
+            </Link>
             <div>
                 <h1 className="font-bold text-[20px] hover:text-green-300">{props.name}</h1>
                 <h1 className="font-bold text-[20px] hover:text-green-300">Orgainc Black Tea</h1>
@@ -30,8 +31,8 @@ export default function Cup(props:Props) {
                 <h1 className="text-[18px]  text-gray-400"><IoPlayCircleOutline /></h1>
             </div>
             
-            <Link href="/admin/cart">
-            <div className="bg-green-200 h-[52px] w-[348px]   flex items-center justify-center hover:bg-green-400"><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
+            <Link href="/detail">
+            <div className="bg-green-200 h-[52px] w-[300px]   flex items-center justify-center hover:bg-green-400"><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
             </Link>
         </div>
         </div>

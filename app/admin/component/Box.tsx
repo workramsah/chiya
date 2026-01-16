@@ -1,10 +1,13 @@
-import Link from "next/link";
+import Link from "next/link"
 
+interface Props{
+    pric:number
+}
 
-export default function Box() {
+export default function Box(props:Props) {
     return (
         <>
-            <div className="bg-gray-300 flex-col justify-evenly w-full space-y-8 px-4">
+            <div className="bg-amber-300 flex-col justify-evenly w-full space-y-8 px-4">
 
                 <h1 className="font-medium border-b text-[20px] py-4">Order Summary</h1>
                 <div className="w-full">
@@ -33,13 +36,13 @@ export default function Box() {
                 </div>
                 <div className="flex border-b w-full justify-between">
                     <h1 className="font-medium">Tax (2%)</h1>
-                    <h1 className="font-medium">Rs 2000.00</h1>
+                    <h1 className="font-medium">${props.pric*10-2/100}</h1>
                 </div>
                 <div className="font-medium w-full flex justify-between">
                     <h1 className="font-medium">Total</h1>
-                    <h1 className="font-medium">Rs 2040.00</h1>
+                    <h1 className="font-medium">${props.pric*10-2/100+100}</h1>
                 </div>
-                <Link href="/admin">
+                <Link href="/admin/order">
                 <button className="w-full bg-amber-400  h-[36px] font-bold hover:bg-amber-500">Place Order</button>
                 </Link>
             </div>

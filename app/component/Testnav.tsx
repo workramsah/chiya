@@ -67,7 +67,10 @@ export default function Testnav() {
           <div className="hidden md:flex space-x-3 items-center">
             <Drawer />
             <Dropdown />
+            <Link href="/detail">
+            
             <BsHandbag className="h-[21px] w-[21px]" />
+            </Link>
           </div>
         </div>
 
