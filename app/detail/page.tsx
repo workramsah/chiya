@@ -14,8 +14,8 @@ export default function Page(){
         <Testnav/>
         <div>
             <Detail 
-                price={price !== null ? Number(price) : 0} 
-                name={name !== null ? name : ''} 
+                price={price !== null ? Number(price) : 90} 
+                name={name !== null ? name : 'Goldern  Tea'} 
             />
             <Featured/>
         </div>
