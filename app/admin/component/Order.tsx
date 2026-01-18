@@ -1,6 +1,7 @@
 
 interface Props{
-    name:string,
+    name:string;
+    price:number;
 }
 
 export default function Order(props:Props) {
@@ -15,7 +16,7 @@ export default function Order(props:Props) {
 
 
                         <div className="flex flex-col space-y-2 ">
-                            <h1 className="font-medium">Stylish Earrings x 1</h1>
+                            <h1 className="font-medium">{props.name}</h1>
                             <h1>Items:1</h1>
                         </div>
                     </div>
@@ -29,7 +30,7 @@ export default function Order(props:Props) {
                     <div>
                         <h1>Method:COD</h1>
                         <h1>Date:1/6/2026</h1>
-                        <h1>Payment:Pending</h1>
+                        <h1>Payment:{props.price}</h1>
                     </div>
                 </div>
             

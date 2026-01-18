@@ -7,9 +7,10 @@ interface Props{
     price:number
 }
 
-export default function Cup(props:Props) {
-    return (
+export default  function Cup(props:Props) {
+ return (
         <div>
+            
         <div className="h-[612px] w-[365px] flex flex-col items-center ">
             <Link href={`/detail?names=${props.name}&prices=${props.price}`}>
             <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>

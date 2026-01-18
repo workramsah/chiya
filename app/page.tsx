@@ -54,10 +54,7 @@ export default function Page() {
         <Ram />
         <Faq />
         <Footer />
-
-
-
-      </div>
+        </div>
 
 
     </>

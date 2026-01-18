@@ -1,9 +1,11 @@
+import { prisma } from "@/prisma/clients";
 import Anav from "../component/Anav";
 import Finalsidebar from "../component/Finalsidebar";
 import Order from "../component/Order";
-import Side from "../component/Side";
 
-export default function Page() {
+
+export default async function Page() {
+ const data = await prisma.items.findMany();
     return (
         <>
 
@@ -16,9 +18,13 @@ export default function Page() {
                     <Finalsidebar/>
                     <div>
                     <div className="text-[28px] font-medium py-4 border-b w-full">Orders</div>
-                    <Order name="Ram narayan sah"/>
-                    <Order name="Ram narayan sah"/>
-                    <Order name="Ram narayan sah"/>
+                    {
+                        data.map((dat)=>(
+                            
+                            <Order key={dat.id} name={` ${dat.name} `} price={dat.price}/>
+                        ))
+                    }
+                    
                     </div>
                 </div>
 
