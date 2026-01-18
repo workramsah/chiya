@@ -1,17 +1,23 @@
 "use client"
+import axios from "axios";
 import Link from "next/link";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 
 interface Props{
-    name:any;
-    price:any;
+    name:string;
+    price:number;
     
 }
 
 export default function Detail(props:Props) {
     const [imag,setImag]= useState("/cup.png");
-   
+    async function handle(){
+        await axios.post("/api/cart",{
+            name:props.name,
+            price:props.price
+        })
+    }
     return (
         <>
             <div className="md:flex justify-evenly space-x-14 mx-5 ">
@@ -55,7 +61,7 @@ export default function Detail(props:Props) {
                 </div>
 
                 <div className="flex space-x-6 justify-center">
-                    <h1 className="w-50 h-14 text-center flex justify-center items-center bg-gray-300">Add to Cart</h1>
+                    <h1 onClick={handle} aria-disabled className="w-50 h-14 text-center flex justify-center items-center bg-gray-300">Add to Cart</h1>
                     <Link href="/admin/cart">
                     <h1 className="w-50 h-14 text-center flex justify-center items-center bg-amber-500">Buy Now</h1>
                     </Link>

@@ -1,6 +1,9 @@
+"use client"
+
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import Link from "next/link";
+import axios from "axios";
 
 interface Props{
     name:string,
@@ -8,6 +11,14 @@ interface Props{
 }
 
 export default  function Cup(props:Props) {
+    async function  handle(e: React.MouseEvent){
+        e.preventDefault();
+        e.stopPropagation();
+        await axios.post("/api/cart",{
+            name:props.name,
+            price:props.price
+        })
+    }
  return (
         <div>
             
@@ -32,9 +43,9 @@ export default  function Cup(props:Props) {
                 <h1 className="text-[18px]  text-gray-400"><IoPlayCircleOutline /></h1>
             </div>
             
-            <Link href="/detail">
-            <div className="bg-green-200 h-[52px] w-[300px]   flex items-center justify-center hover:bg-green-400"><h1 className="font-semibold text-[18px]">Add to Cart</h1></div>
-            </Link>
+            <div onClick={handle} className="bg-green-200 h-[52px] w-[300px] cursor-pointer flex items-center justify-center hover:bg-green-400">
+                <h1 className="font-semibold text-[18px]">Add to Cart</h1>
+            </div>
         </div>
         </div>
     )

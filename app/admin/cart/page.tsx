@@ -1,19 +1,13 @@
-"use client"
-import { useState } from "react";
+import Link from "next/link";
 import Box from "../component/Box";
 import Cartitems from "../component/cartitems";
+import { prisma } from "@/prisma/clients";
 
-interface User {
-    tea: string;
-    price: number;
-    quantity: number;
-    total: number;
-}
 
-export default function Page() {
-    const [data, setData] = useState([{ tea: "ram", price: 3, quantity: 4, total: 4 },
-    { tea: "ram", price: 3, quantity: 4, total: 4 },
-    { tea: "ram", price: 3, quantity: 4, total: 4 }])
+
+export default async function Page() {
+const data = await prisma.cart.findMany();
+   
     return (
         <>
             <div>
@@ -24,10 +18,11 @@ export default function Page() {
                 <div className="md:flex space-x-3  space-y-3">
                     <div className="w-full space-y-3">
                         {data.map((dat) => (
-                            <Cartitems teaname={` ${dat.tea} `} teaprice={dat.price} teaquantity={dat.quantity} teatotal={dat.total} />
+                            <Cartitems key={dat.id} teaname={` ${dat.name} `} teaprice={dat.price} />
                         ))}
-
+                        <Link href="/">
                         <h1 className="font-semibold cursor-pointer text-amber-400">Back to shop</h1>
+                        </Link>
                     </div>
                     <Box pric={4}/>
                 </div>

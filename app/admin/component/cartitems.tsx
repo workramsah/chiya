@@ -1,16 +1,15 @@
 "use client";
 import { useState } from "react";
-import Box from "./Box";
+
 
 interface Props {
   teaname: string;
   teaprice: number;
-  teaquantity: number;
-  teatotal: number;
+ 
 }
 
 export default function Cartitems(props: Props) {
-  const [data, setData] = useState<number>(props.teaquantity);
+  const [datas, setData] = useState<number>(1);
 
   return (
     <>
@@ -26,13 +25,13 @@ export default function Cartitems(props: Props) {
               <input
                 type="number"
                 
-                value={data}
+                value={datas}
                 onChange={(e) => setData(Number(e.target.value))}
                 className="w-20 border text-center appearance-none rounded"
               />
 
               <div className="font-medium">
-                ${props.teaprice * data}
+                ${props.teaprice * datas }
               </div>
             </div>
           </div>
