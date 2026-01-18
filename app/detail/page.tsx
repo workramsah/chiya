@@ -1,11 +1,19 @@
+"use client"
+import { useSearchParams } from "next/navigation";
 import Detail from "../component/Detail";
 import Featured from "../component/Featured";
+import Testnav from "../component/Testnav";
 
 export default function Page(){
+    const searchParams = useSearchParams();
+    const name = searchParams.get("names");
+    const price = searchParams.get("prices");
     return(
         <>
+        
+        <Testnav/>
         <div>
-            <Detail/>
+            <Detail price={price} name={name}/>
             <Featured/>
         </div>
         </>

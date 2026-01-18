@@ -11,7 +11,7 @@ export default function Cup(props:Props) {
     return (
         <div>
         <div className="h-[612px] w-[365px] flex flex-col items-center ">
-            <Link href="/detail">
+            <Link href={`/detail?names=${props.name}&prices=${props.price}`}>
             <img src="/tea.png" className="h-[325.27px] w-[349px]"></img>
             </Link>
             <div>
@@ -19,7 +19,7 @@ export default function Cup(props:Props) {
                 <h1 className="font-bold text-[20px] hover:text-green-300">Orgainc Black Tea</h1>
             </div>
             <div className="flex space-x-2 my-3">
-                <h1 className="text-red-500 text-sm ">${props.price}</h1>
+                <h1 className="text-red-500 text-sm ">${props.price} </h1>
                 <s className="text-gray-400 text-sm">$1000</s>
             </div>
             <div className="flex items-center space-x-2 text-sm">

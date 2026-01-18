@@ -3,7 +3,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 
-export default function Detail() {
+interface Props{
+    name:any;
+    price:any;
+    
+}
+
+export default function Detail(props:Props) {
     const [imag,setImag]= useState("/cup.png");
    
     return (
@@ -21,7 +27,7 @@ export default function Detail() {
                 </div>
                 <div className="space-y-6 pt-4">
                 <div className="border-b space-y-6">
-                    <h1 className="font-medium text-3xl">Brown Tea</h1>
+                    <h1 className="font-medium text-3xl">{props.name}</h1>
                     <h1 className="flex text-orange-500"><FaStar />
                         <FaStar />
                         <FaStar />
@@ -30,7 +36,7 @@ export default function Detail() {
                     </h1>
                     <h1 >This is just not only a brow tea but there are alot of ingredient so if you want to know about the tea and is still you don't know then you should be now </h1>
                     <div>
-                        <span className="font-bold text-3xl">$90</span><s>$155</s>
+                        <span className="font-bold text-3xl">${props.price}</span><s>$155</s>
 
                     </div>
                 </div>
