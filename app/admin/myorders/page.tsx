@@ -1,6 +1,6 @@
 import Anav from "../component/Anav";
+import Aorders from "../component/Aorders";
 import Finalsidebar from "../component/Finalsidebar";
-import Addproducts from "../component/addproductc";
 
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
 
             <div className="flex space-x-4">
                 <Finalsidebar />
-                <Addproducts />
+               <Aorders/>
             </div>
 
 

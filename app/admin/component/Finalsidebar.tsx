@@ -24,6 +24,13 @@ export default function Finalsidebar() {
                         <div className={`${open ? "hover:bg-blue-900 p-2 rounded-2xl" : ""} inline-flex space-x-4`}>
 
                             <FaFileCircleCheck className="bg-white  text-3xl  rounded-sm" />
+                            <h1 className={`${open ? "text-2xl" : "hidden"} duration-300 text-white `}>My Product</h1>
+                        </div>
+                    </Link>
+                    <Link href="/admin/myorders">
+                        <div className={`${open ? "hover:bg-blue-900 p-2 rounded-2xl" : ""} inline-flex space-x-4`}>
+
+                            <FaFileCircleCheck className="bg-white  text-3xl  rounded-sm" />
                             <h1 className={`${open ? "text-2xl" : "hidden"} duration-300 text-white `}>Orders</h1>
                         </div>
                     </Link>

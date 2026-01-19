@@ -4,6 +4,7 @@ import List from "@/app/component/List";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { IoMdCloudUpload } from "react-icons/io";
 
 
@@ -18,7 +19,8 @@ export default function Addproducts(){
         await axios.post("/api/items",{
             name:prodname,
             price:prodprice,   
-        })
+        });
+        toast.success("Product Added")
     }
 
     return(
