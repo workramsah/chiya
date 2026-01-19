@@ -4,6 +4,7 @@ import { IoPlayCircleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import Link from "next/link";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 interface Props{
     name:string,
@@ -14,10 +15,16 @@ export default  function Cup(props:Props) {
     async function  handle(e: React.MouseEvent){
         e.preventDefault();
         e.stopPropagation();
-        await axios.post("/api/cart",{
-            name:props.name,
-            price:props.price
-        })
+        try {
+            await axios.post("/api/cart",{
+                name:props.name,
+                price:props.price
+            });
+            toast.success("Sucessfully Add to Cart")
+        } catch (error) {
+          toast.error("Failed to Add to Cart")  
+        }
+       
     }
  return (
         <div>
