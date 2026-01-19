@@ -1,14 +1,17 @@
 import Heading from "../component/about/Heading";
 import Backgroundimg from "../component/book/Backgrountimg";
-import Nav from "../component/Nav";
+import Testnav from "../component/Testnav";
 
 export default function Page() {
     return (
         <>
             <div>
                 <Heading />
-                <Nav />
-                <Backgroundimg/>
+                <div className="w-full">
+
+                    <Testnav></Testnav>
+                </div>
+                <Backgroundimg />
             </div>
 
         </>
