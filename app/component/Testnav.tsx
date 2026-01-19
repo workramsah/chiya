@@ -80,7 +80,7 @@ export default function Testnav() {
             open ? "block" : "hidden"
           } absolute top-full left-0 z-50 w-full md:hidden bg-[rgba(221,221,221,1)] px-4 py-3 space-y-2 font-medium`}
         >
-          <Link href="/about" onClick={() => setOpen(false)}>
+          <Link href="/aboutus" onClick={() => setOpen(false)}>
             <div className="hover:bg-amber-400 w-fit px-2 rounded-sm">
               About Us
             </div>

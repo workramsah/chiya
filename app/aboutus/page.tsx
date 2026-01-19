@@ -14,31 +14,34 @@ import Backgroundimg from "../component/book/Backgrountimg";
 import Opportunity from "../component/about/Opportunity";
 import About from "../component/about/About";
 import Join from "../component/about/Join";
+import Testnav from "../component/Testnav";
 
 
-export default function Page(){
-    return(
+export default function Page() {
+    return (
         <>
-        <div className="flex flex-col items-center w-full mx-auto">
-            <Heading/>
-            <Nav></Nav>
-            <Backgroundimg/>
-            
-            <Purpose/>
-            <Chiya/>
-            <Where/>
-            <Farmer/>
-            <About/>
-            <Sip/>
-            <Ethical/>
-            <Meet/>
-            <Certifications/>
-            <Opportunity/>
-            
-            <Join/>
-            <Franchise/>
-            <Footer/>
-        </div>
+            <div className="flex flex-col items-center w-full mx-auto">
+                <Heading />
+                <div className="w-full">
+                    <Testnav />
+                </div>
+                <Backgroundimg />
+
+                <Purpose />
+                <Chiya />
+                <Where />
+                <Farmer />
+                <About />
+                <Sip />
+                <Ethical />
+                <Meet />
+                <Certifications />
+                <Opportunity />
+
+                <Join />
+                <Franchise />
+                <Footer />
+            </div>
         </>
     )
 }
