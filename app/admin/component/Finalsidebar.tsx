@@ -20,7 +20,7 @@ export default function Finalsidebar() {
                         </div>
                     </Link>
 
-                    <Link href="/admin/order">
+                    <Link href="/admin/allproduct">
                         <div className={`${open ? "hover:bg-blue-900 p-2 rounded-2xl" : ""} inline-flex space-x-4`}>
 
                             <FaFileCircleCheck className="bg-white  text-3xl  rounded-sm" />
