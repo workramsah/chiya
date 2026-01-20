@@ -1,6 +1,5 @@
 "use client"
 import axios from "axios";
-import Link from "next/link";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -15,12 +14,17 @@ interface Props {
 export default function Box(props: Props) {
     const [value, setValue] = useState("");
     async function handle() {
-
-        await axios.post("/api/orders", {
-            address: value,
-            total: props.total
-        });
-        toast.success("Orders Placed")
+        
+        try {
+            await axios.post("/api/orders", {
+                address: value,
+                total: props.total
+            });
+            toast.success("Orders Placed")
+            
+        } catch (error) {
+           toast.error("Fail to Place") 
+        }
 
 
     }
@@ -33,7 +37,7 @@ export default function Box(props: Props) {
                     <input
                         value={value} onChange={(e) => setValue(e.target.value)}
                         className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
-                        placeholder="Enter address"
+                        placeholder="Enter address" required
                     ></input>
                 </div>
 

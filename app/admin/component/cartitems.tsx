@@ -22,6 +22,7 @@ export default function Cartitems(props: Props) {
         <div className="flex-1">
           <div className="text-sm font-medium">{props.teaname}</div>
           <div className="text-sm text-gray-500">${props.teaprice}</div>
+          
 
           <div className="mt-2 flex items-center justify-between">
             <input
@@ -32,8 +33,12 @@ export default function Cartitems(props: Props) {
               className="w-20 border text-center appearance-none rounded"
             />
 
-            <div className="font-medium">
+            <div className="font-medium ">
+              <div>
+
               ${props.teaprice * props.quantity}
+              </div>
+              <button className="text-red-600 hover:text-red-700 cursor-pointer">Delete</button>
             </div>
           </div>
         </div>
