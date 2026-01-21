@@ -1,12 +1,12 @@
 "use client";
 
-import { Dropdown } from "./Dropdown";
 import { Drawer } from "./Drawer";
 import { GoMultiSelect } from "react-icons/go";
 import { useState } from "react";
 import List from "./List";
 import { BsHandbag } from "react-icons/bs";
 import Link from "next/link";
+import Accountlist from "./Accountlist";
 
 export default function Testnav() {
   const [open, setOpen] = useState(false);
@@ -52,7 +52,7 @@ export default function Testnav() {
               <span className="font-medium hover:bg-amber-400 px-2 rounded-sm">Blog</span>
             </Link>
 
-            <Link href="/contact">
+            <Link href="/">
               <span className="font-medium hover:bg-amber-400 px-2 rounded-sm">Contact</span>
             </Link>
 
@@ -66,8 +66,8 @@ export default function Testnav() {
           {/* Desktop Right Icons */}
           <div className="hidden md:flex space-x-3 items-center">
             <Drawer />
-            <Dropdown />
-            <Link href="/detail">
+            <Accountlist/>
+            <Link href="/admin/cart">
             
             <BsHandbag className="h-[21px] w-[21px]" />
             </Link>
