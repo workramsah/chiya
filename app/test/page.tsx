@@ -15,7 +15,7 @@ interface Props {
   cartData: CartItem[];
 }
 
-export default function CartWrapper({ cartData }: Props) {
+export default function CartWrapper({ cartData = [] }: Props) {
   const [quantities, setQuantities] = useState<Record<string, number>>(() => {
     const initial: Record<string, number> = {};
     cartData.forEach((item) => {
