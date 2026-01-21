@@ -19,7 +19,7 @@ export default async function Page() {
                     {
                         data.map((dat)=>(
                             
-                            <Order key={dat.id} pname={` ${dat.names} `} pprice={dat.total} paddress={` ${dat.address} `} pitems={dat.items} date={dat.createdAt}/>
+                            <Order key={dat.id} pname={` ${dat.address} `} pprice={dat.total} paddress={` ${dat.address} `} date={dat.createdAt}/>
                         ))
                     }
 

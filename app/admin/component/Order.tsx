@@ -4,7 +4,6 @@ interface Props{
     pprice:number;
     date:Date;
     paddress:string;
-    pitems:number;
 }
 
 export default function Order(props:Props) {
@@ -19,7 +18,6 @@ export default function Order(props:Props) {
 
       <div className="flex flex-col">
         <h1 className="font-medium">{props.pname}</h1>
-        <p className="text-sm text-gray-600">Items: {props.pitems}</p>
       </div>
     </div>
 
