@@ -36,6 +36,8 @@ model Order {
   id        String   @id @default(uuid())
   address   String
   total     Int
+  items     Int      @default(0)
+  names     String   @default("")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

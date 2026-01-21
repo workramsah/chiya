@@ -1,39 +1,50 @@
 
 interface Props{
-    name:string;
-    price:number;
+    pname:string;
+    pprice:number;
     date:Date;
+    paddress:string;
+    pitems:number;
 }
 
 export default function Order(props:Props) {
     return (
         <>
-            
-                
-                <div className="flex   justify-evenly space-y-4 space-x-6 md:space-y-0 w-full border-b">
-                    <div className="md:flex space-x-4 items-center flex-col">
+          <div className="w-full border-b py-4">
+  <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
 
-                        <img src="/cup.png" className="w-20"></img>
+    {/* Product Info */}
+    <div className="flex items-center gap-4">
+      <img src="/cup.png" className="w-16 md:w-20" />
 
+      <div className="flex flex-col">
+        <h1 className="font-medium">{props.pname}</h1>
+        <p className="text-sm text-gray-600">Items: {props.pitems}</p>
+      </div>
+    </div>
 
-                        <div className="flex flex-col space-y-2 ">
-                            <h1 className="font-medium">Name</h1>
-                            <h1>Items:1</h1>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="font-medium">{props.name}</h1>
-                        <h1>Birgunj</h1>
-                        <h1>{props.name}</h1>
-                        <h1>9744201315</h1>
-                    </div>
-                    <h1 className="font-medium">61</h1>
-                    <div>
-                        <h1>Method:COD</h1>
-                        <h1>Date:{props.date.toLocaleDateString()}</h1>
-                        <h1>Payment:${props.price}</h1>
-                    </div>
-                </div>
+    {/* Address */}
+    <div className="text-sm">
+      <h1 className="font-medium">Address</h1>
+      <p>{props.paddress}</p>
+      <p>9744201315</p>
+    </div>
+
+    {/* Total */}
+    <h1 className="font-medium text-center md:text-left">
+      61
+    </h1>
+
+    {/* Payment Info */}
+    <div className="text-sm">
+      <p>Method: COD</p>
+      <p>Date: {props.date.toLocaleDateString()}</p>
+      <p className="font-medium">Payment: ${props.pprice}</p>
+    </div>
+
+  </div>
+</div>
+
             
         </>
     )

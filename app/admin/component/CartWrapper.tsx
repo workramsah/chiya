@@ -1,7 +1,6 @@
 "use client";
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import Box from "./Box";
 import Cartitems from "./cartitems";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -53,10 +52,10 @@ export default function CartWrapper({ cartData }: Props) {
   async function handle() {
     try {
       await axios.post("/api/orders", {
-
         address: value,
         total: totala,
-
+        items: totalItems,
+        names: cartData.map((dat) => dat.name),
       });
       toast.success("Order Placed");
 
