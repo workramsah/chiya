@@ -1,16 +1,25 @@
 import { prisma } from "@/prisma/clients";
 import { Drawer } from "./Drawer";
-import { GoMultiSelect } from "react-icons/go";
 import List from "./List";
 import Link from "next/link";
 import Accountlist from "./Accountlist";
 import Bag from "./Bag";
 import MobileMenu from "./MobileMenu";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
 
 export default async function Testnav() {
- 
-  const orders = await prisma.order.findMany();
-  const cartCount = orders.reduce((sum, order) => sum + order.items, 0);
+  const session = await auth.api.getSession({
+    headers: await headers() // you need to pass the headers object.
+  });
+
+  let cartCount: number;
+  if (!session) {
+    cartCount = 0;
+  } else {
+    const orders = await prisma.order.findMany();
+    cartCount = orders.reduce((sum, order) => sum + order.items, 0);
+  }
   
   return (
     <>
