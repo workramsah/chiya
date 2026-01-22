@@ -13,6 +13,7 @@ interface Props{
 
 export default  function Cup(props:Props) {
     async function  handle(e: React.MouseEvent){
+        console.log("Add to Cart clicked!");
         e.preventDefault();
         e.stopPropagation();
         try {
@@ -21,8 +22,10 @@ export default  function Cup(props:Props) {
                 price:props.price
             });
             toast.success("Sucessfully Add to Cart")
-        } catch (error) {
-          toast.error("Failed to Add to Cart")  
+        } catch (error: any) {
+          console.error("Failed to add to cart:", error);
+          const errorMessage = error.response?.data?.message || "Failed to Add to Cart";
+          toast.error(errorMessage);  
         }
        
     }
@@ -50,9 +53,9 @@ export default  function Cup(props:Props) {
                 <h1 className="text-[18px]  text-gray-400"><IoPlayCircleOutline /></h1>
             </div>
             
-            <div onClick={handle} className="bg-green-200 h-[52px] w-[300px] cursor-pointer flex items-center justify-center hover:bg-green-400">
+            <button onClick={handle} className="bg-green-200 h-[52px] w-[300px] cursor-pointer flex items-center justify-center hover:bg-green-400">
                 <h1 className="font-semibold text-[18px]">Add to Cart</h1>
-            </div>
+            </button>
         </div>
         </div>
     )

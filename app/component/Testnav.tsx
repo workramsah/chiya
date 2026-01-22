@@ -1,18 +1,16 @@
-"use client";
-
+import { prisma } from "@/prisma/clients";
 import { Drawer } from "./Drawer";
 import { GoMultiSelect } from "react-icons/go";
-import { useState } from "react";
 import List from "./List";
-
 import Link from "next/link";
 import Accountlist from "./Accountlist";
 import Bag from "./Bag";
+import MobileMenu from "./MobileMenu";
 
-
-export default function Testnav() {
+export default async function Testnav() {
  
-  const [open, setOpen] = useState(false);
+  const orders = await prisma.order.findMany();
+  const cartCount = orders.reduce((sum, order) => sum + order.items, 0);
   
   return (
     <>
@@ -21,15 +19,7 @@ export default function Testnav() {
         <div className="relative flex items-center justify-between bg-[rgba(221,221,221,1)] px-4 py-4 md:py-6 md:px-8 border-b w-full">
           
           {/* Mobile Menu Icon */}
-          <div className="flex items-center space-x-4">
-            <div
-              className="md:hidden cursor-pointer"
-              onClick={() => setOpen(!open)}
-              aria-label="Toggle menu"
-            >
-              <GoMultiSelect className="text-2xl" />
-            </div>
-          </div>
+          <MobileMenu />
 
           {/* Desktop Logo */}
           <div className="hidden md:block absolute left-3">
@@ -70,40 +60,11 @@ export default function Testnav() {
           <div className="hidden md:flex space-x-3 items-center">
             <Drawer />
             <Accountlist/>
-            <Bag/>
+            <Bag cartCount={cartCount}/>
           </div>
         </div>
 
         {/* MOBILE MENU */}
-        <div
-          className={`${
-            open ? "block" : "hidden"
-          } absolute top-full left-0 z-50 w-full md:hidden bg-[rgba(221,221,221,1)] px-4 py-3 space-y-2 font-medium`}
-        >
-          <Link href="/aboutus" onClick={() => setOpen(false)}>
-            <div className="hover:bg-amber-400 w-fit px-2 rounded-sm">
-              About Us
-            </div>
-          </Link>
-
-          <div className="hover:bg-amber-400 w-fit px-2 rounded-sm">
-            <List />
-          </div>
-
-          <Link href="/learn" onClick={() => setOpen(false)}>
-            <div className="hover:bg-amber-400 w-fit px-2 rounded-sm">
-              Blog
-            </div>
-          </Link>
-
-          <Link href="/book" onClick={() => setOpen(false)}>
-            <div className="hover:bg-amber-400 w-fit px-2 rounded-sm">
-              Franchise Opportunity
-            </div>
-          </Link>
-        </div>
-
-        {/* PAGE CONTENT */}
       </div>
        
     </>
