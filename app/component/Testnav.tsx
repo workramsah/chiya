@@ -4,13 +4,16 @@ import { Drawer } from "./Drawer";
 import { GoMultiSelect } from "react-icons/go";
 import { useState } from "react";
 import List from "./List";
-import { BsHandbag } from "react-icons/bs";
+
 import Link from "next/link";
 import Accountlist from "./Accountlist";
+import Bag from "./Bag";
+
 
 export default function Testnav() {
+ 
   const [open, setOpen] = useState(false);
-
+  
   return (
     <>
       <div className="relative">
@@ -67,10 +70,7 @@ export default function Testnav() {
           <div className="hidden md:flex space-x-3 items-center">
             <Drawer />
             <Accountlist/>
-            <Link href="/admin/cart">
-            
-            <BsHandbag className="h-[21px] w-[21px]" />
-            </Link>
+            <Bag/>
           </div>
         </div>
 

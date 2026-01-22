@@ -79,7 +79,7 @@ export default function CartWrapper({ cartData }: Props) {
                 teaname={` ${dat.name} `}
                 teaprice={dat.price}
                 quantity={quantities[dat.id] || 1}
-                onQuantityChange={updateQuantity}
+                onQuantityChange={updateQuantity} ids={` ${dat.id}`}
               />
             ))}
             <Link href="/">
